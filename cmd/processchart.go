@@ -9,9 +9,7 @@ import (
 )
 
 func ProcessChart[T any](chart T, process bool) {
-
 	fmt.Println("~Process Chart~")
-
 	switch c := any(chart).(type) {
 	case v2.Chart:
 		actionsV2.PrintChart(c, process)

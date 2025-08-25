@@ -21,7 +21,7 @@ func main() {
 
 	chart3 := v3.Chart{
 		Metadata: nil,
-		Version:  1.1,
+		Version:  2.1,
 	}
 
 	cmd.ProcessChart(chart2, true)
