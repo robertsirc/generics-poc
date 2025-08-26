@@ -8,9 +8,9 @@ import (
 	v3 "generics-poc/charts/v3"
 )
 
-func ProcessChart[T any](chart T, process bool) {
+func ProcessChart(chart any, process bool) {
 	fmt.Println("~Process Chart~")
-	switch c := any(chart).(type) {
+	switch c := (chart).(type) {
 	case v2.Chart:
 		actionsV2.PrintChart(c, process)
 	case v3.Chart:
